@@ -17,10 +17,10 @@ export class SearchComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  search() {
+  searchGif() {
     const value = this.txtSearch.nativeElement.value;
     if (value.trim().length != 0) {
-      this.gifService.searchGifs(value);
+      this.gifService.search(value);
       this.txtSearch.nativeElement.value = '';
     }
   }
