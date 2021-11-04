@@ -1,5 +1,13 @@
-<p>
-  A crystal form of love is the relativity.Salad cream soup is just not the same without parsley and squeezed rich
-  caviars.Urchin, pestilence, and treasure.Gemna, danista, et onus.The life is a galactic processor.Planets
-  malfunction with plasma at the most unusual center!
-</p>
+<div class="row">
+<!--  <h3>{{txtSearch}}</h3>-->
+  <div class="col-md-4 col-sm-6" *ngFor="let gif of results">
+    <div class="card">
+      <img class="card-image-top" [src]="gif.images.downsized_medium.url" [alt]="gif.title">
+      <div class="card-body">
+        <div class="card-text">
+          {{gif.title}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
