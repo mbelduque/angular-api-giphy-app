@@ -2,10 +2,11 @@
   <h3 class="text-light">Giphy World</h3>
   <hr class="text-light">
   <div class="list-group list-reset">
-    <a class="list-group-item list-group-item-action" href="#">Historial Busqueda</a>
+    <a class="list-group-item list-group-item-action" href="#">Historial de Busqueda</a>
   </div>
   <div class="mt-3">
-    <ul *ngFor="let gif of record">
+    <ul *ngFor="let gif of record"
+        (click)="search(gif)">
       <li class="text-light">{{gif | titlecase}}</li>
     </ul>
   </div>
