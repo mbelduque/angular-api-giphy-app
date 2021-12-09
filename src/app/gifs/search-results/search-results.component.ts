@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 import {GifsService} from '../services/gifs.service';
 import {Gif} from "../interfaces/interfaces-gifs";
